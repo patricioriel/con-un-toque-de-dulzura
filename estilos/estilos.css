@@ -1,0 +1,308 @@
+.bodyindex {
+    color:hsl(256, 100%, 13%);
+    background-color: #c4a4ff;
+    font-family: 'Grandstander', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.divlogo{
+    display: flex;
+}
+
+.logo{
+    width: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.barramenu{
+    background-color: blueviolet;
+    
+}
+
+
+    
+    
+
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none   ;
+    margin: 30px;
+}
+
+
+.paso_a_paso {
+    font-style: italic;
+    list-style-position: inside;
+
+}
+
+a:hover {
+    color: rgb(206, 0, 0);
+
+}
+
+
+.fotos{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+   
+}
+
+.chocotorta{
+    width: 100%;
+    
+}
+
+.tortafrutilla{
+    width: 100%;
+    
+}
+
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 3px;
+
+}
+
+li{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+.fondopasos{
+    background-image: url("../Imagenes/fondo1.JPG");
+
+    width: auto;
+    
+    background-size: 500px;
+    color: rgb(0, 0, 0);
+}
+
+.iconofb:hover{
+    color: rgb(136, 0, 0)
+}
+
+.iconoig:hover{
+    color: rgb(136, 0, 0)
+}
+.iconoli:hover{
+    color: rgb(136, 0, 0)
+}
+
+.pie{
+    padding-top: 12px;
+    padding-bottom: 3px;
+}
+
+span{
+    display: block;
+    padding-top: 10px;
+    
+}
+
+
+
+.pasoapasogrid{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 10px;
+    width: 60%;
+    margin: auto;
+   
+  
+    
+}
+
+.pasoapasogrid li{
+    display: flex;
+    align-items: center;
+}
+
+
+.item{
+    margin-left: 2px;
+     
+}
+
+
+@media (max-width: 800px) {
+            .menu{display: inline;
+                   font-size: 17px;}
+            .bodyindex{font-size: 17px;}
+            .textonosotros{font-size: 17px;
+                            width: 100%;}
+            .bodycontacto{font-size: 17px;}
+            .bodytortas{font-size: 17px;}
+            .bodycarrito{font-size: 17px;}
+            h1{font-size: 24px;}
+            .chocotorta{width: 100%; 
+                        max-height: 200px;}
+            .tortafrutilla{width: 100%;
+                        max-height: 200px}
+            .fotos{grid-template-columns: 1fr;
+                    }
+            .contenidonosotros{grid-template-columns: 1fr;
+                               grid-template-areas: "texto";
+                                                    "mapa" }
+            .textonosotros{grid-area: texto;}
+            .mapa{grid-area: mapa;}
+            
+            
+}
+
+
+/* Fin de home */
+
+
+.bodynosotros{
+    color:hsl(256, 100%, 13%);
+    background-color: #c4a4ff;
+    font-family: 'Grandstander', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contenidonosotros{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+    
+
+
+/* Fin de nosotros jaja */
+
+
+.bodycontacto{
+    color:hsl(256, 100%, 13%);
+    background-color: #c4a4ff;
+    font-family: 'Grandstander', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.formulario{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(174, 0, 255, 0.493);
+    border-radius: 5px;
+    
+}
+
+.nombre{
+    padding: 5px;
+    width: 280px;
+}
+
+.mail{
+    padding: 5px;
+    width: 280px
+}
+
+.consulta{
+    padding: 5px;
+    width: 280px;
+    height: 280px;
+}
+
+
+/* Fin de Contacto */
+
+
+.bodytortas{
+    color:hsl(256, 100%, 13%);
+    background-color: #c4a4ff;
+    font-family: 'Grandstander', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedortortas{
+    display:flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.torta{
+    width: 350px;
+    
+    background-color: rgba(174, 0, 255, 0.493);
+    border: 2px solid rgb(34, 0, 185);
+    border-radius: 5px;
+
+}
+
+.fotostortas{
+    padding-top: 10px;
+}
+
+
+
+/* Fin de Tortas */
+
+
+.bodycarrito{
+    color:hsl(256, 100%, 13%);
+    background-color: #c4a4ff;
+    font-family: 'Grandstander', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    padding: 15px;
+}
+
+table{
+    margin: 50px auto;
+
+    }
+
+/* Fin de Carrito */
+
+
+
