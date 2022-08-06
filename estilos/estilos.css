@@ -18,32 +18,6 @@
     width: 100%;
 }
 
-.menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-   
-}
-
-.botonmenu{display: none;
-            color:black;
-            font-size: 17px;
-            background-color: transparent;
-            border: none;
-            padding: 10px 20px;
-            padding-left: 40px;
-            background-image: url(../imagenes/menu.png);
-            background-position: left center;
-            background-repeat: no-repeat;
-            background-size: 33px;}
-
-.barramenu{
-    
-    background: linear-gradient(90deg, rgba(156,58,226,0.7679446778711485) 0%, rgba(140,64,255,0.7595413165266106) 100%);
-    
-}
-
 
 .navbar-expand-lg{
     background: linear-gradient(90deg, rgba(156,58,226,0.7679446778711485) 0%, rgba(140,64,255,0.7595413165266106) 100%) !important;
@@ -53,6 +27,16 @@
 .nav-item{
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.container-fluid{
+    justify-content: center !important;}
+
+
+
+.menumobile{
+    padding-left: 15px;
+    display: none;
 }
     
 
@@ -140,7 +124,7 @@ li{
     
 }
 
-span{
+.nombreyanio{
     display: block;
     padding-top: 10px;
     
@@ -173,43 +157,8 @@ span{
 }
 
 
-@media (max-width: 800px) {
-            .menu{display: none}
-            .bodyindex{font-size: 17px;}
-            .textonosotros{font-size: 17px;
-                            width: 100%;}
-            .bodycontacto{font-size: 17px;}
-            .bodytortas{font-size: 17px;}
-            .bodycarrito{font-size: 17px;}
-            h1{font-size: 24px;}
-            .chocotorta{width: 100%; 
-                        max-height: 200px;}
-            .tortafrutilla{width: 100%;
-                        max-height: 200px}
-            .fotos{flex-wrap: wrap;
-                    }
-            .pie a {margin: 8px;}
-            .pie{font-size: 17px}
-            .contenidonosotros{flex-wrap:wrap;
-                                justify-content: center;}
-            .textonosotros{width: 100%;}
-            .mapa{width: 100%;}
-            .contenedortortas{flex-wrap: wrap;
-                              row-gap: 25px;
-                              font-size: 17px;}
-            .torta1{width: 100%;}
-            .torta2{width: 100%;}
-            .torta3{width: 100%;}
-            .botoncarrito{font-size: 17px !important;}
-            .tabla{font-size: 17px;}
-            .botonmenu{display: inline-block;
-                        font-size: 22px;
-                        font-family: 'Grandstander', cursive;
-                        font-weight: bold;
-                        }
-            
-            
-}
+
+
 
 
 /* Fin de home */
@@ -334,7 +283,7 @@ span{
               background-position: left center;
               font-family: 'Grandstander', cursive;
               font-weight: bold;
-              font-size: 20px;
+              font-size: 22px;
               border-radius: 5px;
              
                                                 }
@@ -361,22 +310,60 @@ span{
 
 
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    
+.flexcarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-th, td{
-    padding: 15px;
+.btn-default{
+    background-image: url(../imagenes/campana.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: end;
+    width: 40%;
+    background-color: rgba(183, 120, 241, 0.74);
 }
-
-table{
-    margin: 50px auto;
-
-    }
 
 /* Fin de Carrito */
 
 
 
+@media (max-width: 800px) {
+    .bodyindex{font-size: 17px;}
+    .bodynosotros{font-size: 17px;}
+    .textonosotros{font-size: 17px;
+                    width: 100%;}
+    .bodycontacto{font-size: 17px;}
+    .bodytortas{font-size: 17px;}
+    .bodycarrito{font-size: 17px;}
+    h1{font-size: 24px;}
+    .chocotorta{width: 100%; 
+                max-height: 200px;}
+    .tortafrutilla{width: 100%;
+                max-height: 200px}
+    .fotos{flex-wrap: wrap;
+            }
+    .pie a {margin: 8px;}
+    .pie{font-size: 17px}
+    .contenidonosotros{flex-wrap:wrap;
+                        justify-content: center;}
+    .textonosotros{width: 100%;}
+    .mapa{width: 100%;}
+    .contenedortortas{flex-wrap: wrap;
+                      row-gap: 25px;
+                      font-size: 17px;}
+    .torta{width: 80%;}
+    .fotostortas{width: 90%;}
+    .botoncarrito{font-size: 17px !important;}
+    .tabla{font-size: 17px;}
+    .menumobile{display:flex !important;}
+    .autor{display: block;}
+    .flexcarrito{flex-wrap: wrap;}
+    .btn-default{width: 200px;
+                font-size: 17px;}
+}
