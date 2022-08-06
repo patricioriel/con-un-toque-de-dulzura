@@ -39,13 +39,21 @@
             background-size: 33px;}
 
 .barramenu{
-    background: rgb(156,58,226);
+    
     background: linear-gradient(90deg, rgba(156,58,226,0.7679446778711485) 0%, rgba(140,64,255,0.7595413165266106) 100%);
     
 }
 
 
-    
+.navbar-expand-lg{
+    background: linear-gradient(90deg, rgba(156,58,226,0.7679446778711485) 0%, rgba(140,64,255,0.7595413165266106) 100%) !important;
+    margin-bottom: 20px;
+}
+
+.nav-item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
     
 
 
@@ -56,9 +64,9 @@ h1 {
 }
 
 a {
-    color: black;
+    color: black !important;
     text-decoration: none   ;
-    margin: 30px;
+    margin: 5px;
 }
 
 
@@ -248,6 +256,7 @@ span{
 
 .formulario{
     width: 300px;
+    box-sizing: content-box !important;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(151, 95, 241, 0.788);
