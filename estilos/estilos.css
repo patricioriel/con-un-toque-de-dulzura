@@ -124,7 +124,7 @@ li{
     
 }
 
-.nombreyanio{
+.autor{
     display: block;
     padding-top: 10px;
     
@@ -275,7 +275,7 @@ li{
     padding-top: 10px;
 }
 
-.botoncarrito{width: 80%;
+.botoncarrito{
               margin-bottom: 10px;
               padding: 10px;
               background-image: url(../imagenes/campana.png);
@@ -295,27 +295,24 @@ li{
 
  }
 
- .rounded{padding-top: 5px;
+ .fototorta{padding-top: 5px;
           padding-bottom: 5px;
           }
 
-.col-xs-10.col-sm-10.col-md-5.col-lg-3.border.border-3.rounded{
+.cajatortas{
     background-color: rgba(155, 115, 221, 0.719);
+    display: flex;
+    flex-direction: column;
    
 }
 
-.row{
+.divflex{
     row-gap: 15px;
     justify-content: space-around;
     
-    
     }
 
-.row button{align-items: flex-end;}
-
-
-
-
+.textotortas{flex:1}
 
 
 
