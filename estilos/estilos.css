@@ -285,6 +285,8 @@ li{
               font-weight: bold;
               font-size: 22px;
               border-radius: 5px;
+              box-sizing: content-box;
+              
              
                                                 }
 
@@ -292,7 +294,35 @@ li{
  .botoncarrito:hover{color: rgb(206, 0, 0);
 
  }
-                                                
+
+ .rounded{padding-top: 5px;
+          padding-bottom: 5px;
+          }
+
+.col-xs-10.col-sm-10.col-md-5.col-lg-3.border.border-3.rounded{
+    background-color: rgba(155, 115, 221, 0.719);
+   
+}
+
+.row{
+    row-gap: 15px;
+    justify-content: space-around;
+    
+    
+    }
+
+.row button{align-items: flex-end;}
+
+
+
+
+
+
+
+
+
+
+
 /* Fin de Tortas */
 
 
