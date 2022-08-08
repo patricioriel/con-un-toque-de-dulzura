@@ -149,45 +149,24 @@ li{
 
 
 .pasoapasogrid{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
     list-style-position: inside;
-    text-align: left;
+    list-style-type: none;
     padding-left: 10px;
     width: 60%;
     margin: auto;
-    grid-template-areas: "batidor item1"
-                        "pastelera item2"
-                        "manga item3"
-                        "dona item4"
-                        "cookie item5"
-                        "cafe item6";
-  
     
+ 
 }
 
 
 
 
-.item{
-    margin-left: 2px;
-     
-}
 
 
-.item1{grid-area: item1;}
-.item2{grid-area: item2;}
-.item3{grid-area: item3;}
-.item4{grid-area: item4;}
-.item5{grid-area: item5;}
-.item6{grid-area: item6;}
-.pngbatidor{grid-area: batidor;}
-.pngpastelera{grid-area: pastelera;}
-.pngmanga{grid-area: manga;}
-.pngdona{grid-area: dona;}
-.pngcookie{grid-area: cookie;}
-.pngcafe{grid-area: cafe;}
+.pasoapasogrid li{display: flex;
+            align-items: center;}
+
 
 
 
@@ -219,7 +198,7 @@ li{
     
 
 
-/* Fin de nosotros jaja */
+/* Fin de nosotros */
 
 
 .bodycontacto{
@@ -411,6 +390,7 @@ li{
     .flexcarrito{flex-wrap: wrap;}
     .btn-default{width: 200px;
                 font-size: 17px;}
+    .pasoapasogrid{flex-wrap: wrap;}
 }
 
 
