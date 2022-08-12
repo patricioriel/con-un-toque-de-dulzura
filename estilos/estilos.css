@@ -233,18 +233,29 @@ li{
 .nombre{
     padding: 5px;
     width: 280px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.719)
+    
 }
 
 .mail{
     padding: 5px;
-    width: 280px
+    width: 280px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.719)
 }
 
 .consulta{
     padding: 5px;
     width: 280px;
     height: 280px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.719)
 }
+
+.divnombre{padding-bottom: 10px;}
+
+.divmail{padding-bottom: 10px;}
 
 .botonformulario{margin-bottom: 10px;
                 padding: 10px;
@@ -284,8 +295,9 @@ li{
               font-family: 'Grandstander', cursive;
               font-weight: bold;
               font-size: 22px;
+              border: 2px solid rgba(0, 0, 0, 0.719);
               border-radius: 5px;
-              box-sizing: content-box;
+              
               
              
                                                 }
@@ -298,6 +310,8 @@ li{
 
  .fototorta{padding-top: 5px;
           padding-bottom: 5px;
+          width: 80%;
+          height: 300px
           }
 
 .fototorta:hover{transform: scale(1,1)}
@@ -317,7 +331,12 @@ li{
 
 .textotortas{flex:1}
 
-
+.subtortas{
+    padding-bottom: 5px;
+    font-size: 24px;
+    text-decoration:underline;
+    
+}
 
 
 
@@ -346,7 +365,8 @@ li{
     align-items: center;
 }
 
-.btn-default{
+.btnvolvertortas{
+    background-color: whitesmoke;
     background-image: url(../imagenes/campana.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -354,9 +374,14 @@ li{
     font-weight: bold;
     font-size: 22px;
     border-radius: 5px;
-    text-align: end;
-    width: 40%;
-    background-color: rgba(183, 120, 241, 0.74);
+    border: 2px solid rgba(0, 0, 0, 0.719);
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+
+.btnvolvertortas:hover{
+    color: red !important;
 }
 
 /* Fin de Carrito */
@@ -390,14 +415,13 @@ li{
     .torta{width: 80%;}
     .fotostortas{width: 90%;}
     .botoncarrito{font-size: 17px !important;}
-    .tabla{font-size: 17px;}
     .menumobile{display:flex !important;}
     .autor{display: block;}
     .flexcarrito{flex-wrap: wrap;}
-    .btn-default{width: 200px;
-                font-size: 17px;}
     .pasoapasogrid li{flex-wrap: wrap;
                         justify-content: center;}
+    .btnvolvertortas{font-size: 17px;}
+    .subtortas{font-size: 20px;}
 }
 
 
