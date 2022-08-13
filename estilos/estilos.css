@@ -466,14 +466,13 @@ li{
                         justify-content: center;}
     .btnvolvertortas{font-size: 17px;}
     .subtortas{font-size: 20px;}
-    .cajatortasanimacion{width: 100%;}
+    .cajatortasanimacion{width: 100%;
+                        }
     .subtienda{font-size: 24px;}
     .catalogo{font-size: 17px;}
 }
 
-@media (min-width: 600px) and (max-width: 799px){
-    .cajatortasanimacion{width: 45%;}
-}
+
 
 @keyframes animaciones{
     0%{background-color: #902bd9;}
