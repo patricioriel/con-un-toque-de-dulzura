@@ -84,7 +84,7 @@ a {
 
 .fotos{
     display:flex;
-    justify-content: space-evenly
+    justify-content: space-around
     
    
 }
@@ -95,13 +95,13 @@ a {
 }
 
 .tortafrutilla{
-    width: 45%;
-    transition: all 1s ease-in-out
+    width: 100%
 }
 
-.cajachocotorta{
+.cajatortasanimacion{
     position: relative;
     display: flex;
+    overflow: hidden;
     
     
 }
@@ -115,7 +115,8 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    transition: all 3s ease-in-out
+    transition: all 1s ease-in-out;
+    top: -150px
     
     }
 
@@ -123,17 +124,20 @@ a {
     width: 100%;
     font-size: 30px;
     color: white;
+   
 }
 
 .catalogo{
     width: 100%;
     font-size: 30px;
-    color: white;}
+    color: white;
+}
+    
 
 .textohover:hover{opacity: 1;
     font-size: 30px;
     color: white;
-    
+    top:0
 }
 
 
