@@ -78,10 +78,6 @@ a {
 
 .tituloindex:hover{transform: rotateY(180deg);}
 
-/* .chocotorta:hover{transform: scale(1.1) rotate(-10deg);}
-
-.tortafrutilla:hover{transform: scale(1.1) rotate(10deg);} */
-
 .fotos{
     display:flex;
     justify-content: space-around
@@ -102,9 +98,14 @@ a {
     position: relative;
     display: flex;
     overflow: hidden;
-    
+    width: 45%;
+    max-height: 400px;
+    border-radius: 30px;
+    padding-bottom: 15px;
     
 }
+
+
 
 .textohover{
     opacity: 0;
@@ -465,8 +466,14 @@ li{
                         justify-content: center;}
     .btnvolvertortas{font-size: 17px;}
     .subtortas{font-size: 20px;}
+    .cajatortasanimacion{width: 100%;}
+    .subtienda{font-size: 24px;}
+    .catalogo{font-size: 17px;}
 }
 
+@media (min-width: 600px) and (max-width: 799px){
+    .cajatortasanimacion{width: 45%;}
+}
 
 @keyframes animaciones{
     0%{background-color: #902bd9;}
