@@ -114,7 +114,7 @@ a {
     height: 100%;
     background-color: rgb(255, 185, 216);
     display: flex;
-    align-items: center;
+    
     flex-wrap: wrap;
     transition: all 1s ease-in-out;
     top: -150px
@@ -125,7 +125,7 @@ a {
     width: 100%;
     font-size: 30px;
     color: white;
-   
+   padding-top: 30px;
 }
 
 .catalogo{
@@ -442,9 +442,9 @@ li{
     .bodycarrito{font-size: 17px;}
     h1{font-size: 24px;}
     .chocotorta{width: 100%; 
-                max-height: 200px;}
+                }
     .tortafrutilla{width: 100%;
-                max-height: 200px}
+                }
     .fotos{flex-wrap: wrap;
             }
     .pie a {margin: 8px;}
@@ -466,7 +466,7 @@ li{
                         justify-content: center;}
     .btnvolvertortas{font-size: 17px;}
     .subtortas{font-size: 20px;}
-    .cajatortasanimacion{width: 100%;
+    .cajatortasanimacion{width: 90%;
                         }
     .subtienda{font-size: 24px;}
     .catalogo{font-size: 17px;}
