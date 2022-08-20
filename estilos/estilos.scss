@@ -2,6 +2,22 @@ $fondopagina: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1
 $fuentecuerpo: 22px;
 $fuentemobile: 17px;
 
+@mixin botones {
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family: 'Grandstander', cursive;
+	font-weight: bold;
+	font-size: $fuentecuerpo;
+	border: 2px solid rgba(0, 0, 0, 0.719);
+	border-radius: 5px;
+}
+
+@mixin propiedadesformulario {
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.719);
+	padding: 5px;
+}
+
 @keyframes animaciones {
     0%{background-color: #902bd9;}
 
@@ -75,9 +91,10 @@ a {
 }
 
 .tituloindex {
-	transition: all 1s ease-in-out;
-	&:hover {
-		transform: rotateY(180deg);
+	text-decoration: underline rgba(255, 255, 255, 0);
+  	transition: text-decoration-color 300ms;
+	&:hover{
+		text-decoration-color: rgb(0, 0, 0);
 	}
 }
 
@@ -98,7 +115,7 @@ a {
 	position: relative;
 	display: flex;
 	overflow: hidden;
-	width: 45%;
+	width: 40%;
 	max-height: 400px;
 	border-radius: 30px;
 	padding-bottom: 15px;
@@ -177,11 +194,34 @@ li {
 .pie {
 	padding-top: 12px;
 	padding-bottom: 3px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 30px;
 }
 
-.autor {
-	display: block;
-	padding-top: 10px;
+.mediosdepago{
+	display: flex;
+	flex-wrap: wrap;
+	width: 45%;
+	justify-content: space-around;
+	
+	span{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+}
+
+.nuestrasredes{
+	display: flex;
+	flex-wrap: wrap;
+	width: 45%;
+	justify-content: center;
+	span{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	i{padding-left: 20px;}
 }
 
 .pasoapasogrid {
@@ -216,25 +256,19 @@ li {
 }
 
 .nombre {
-	padding: 5px;
+	@include propiedadesformulario;
 	width: 280px;
-	border-radius: 5px;
-	border: 2px solid rgba(0, 0, 0, 0.719);
 }
 
 .mail {
-	padding: 5px;
+	@include propiedadesformulario;
 	width: 280px;
-	border-radius: 5px;
-	border: 2px solid rgba(0, 0, 0, 0.719);
 }
 
 .consulta {
-	padding: 5px;
+	@include propiedadesformulario;
 	width: 280px;
 	height: 280px;
-	border-radius: 5px;
-	border: 2px solid rgba(0, 0, 0, 0.719);
 }
 
 .divnombre {
@@ -246,30 +280,19 @@ li {
 }
 
 .botonformulario {
-	margin-bottom: 10px;
-	padding: 10px;
+	@include botones;
 	width: 80%;
 	background-image: url(../imagenes/formulario.png);
 	background-size: 40px;
 	background-repeat: no-repeat;
 	background-position: left center;
-	font-family: 'Grandstander', cursive;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 5px;
 }
 
 .botoncarrito {
-	margin-bottom: 10px;
-	padding: 10px;
+	@include botones;
 	background-image: url(../imagenes/campana.png);
 	background-repeat: no-repeat;
 	background-position: left center;
-	font-family: 'Grandstander', cursive;
-	font-weight: bold;
-	font-size: $fuentecuerpo;
-	border: 2px solid rgba(0, 0, 0, 0.719);
-	border-radius: 5px;
 	&:hover {
 		color: rgb(206, 0, 0);
 	}
@@ -283,15 +306,25 @@ li {
 	width: auto;
 	max-height: 300px;
 	max-width: 100%;
-	&:hover {
-		transform:rotate(-10deg);
-	}
+	
 }
 
 .cajatortas {
 	background-color: rgba(155, 115, 221, 0.719);
 	display: flex;
 	flex-direction: column;
+	opacity: 0.9;
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.preciotorta {
+	text-decoration: underline rgba(255, 255, 255, 0);
+  	transition: text-decoration-color 300ms;
+	&:hover{
+		text-decoration-color: rgb(0, 0, 0);
+	}
 }
 
 .divflex {
@@ -367,10 +400,17 @@ li {
 		flex-wrap: wrap;
 	}
 	.pie {
+		row-gap: 30px;
 		a {
 			margin: 8px;
 		}
 		font-size: $fuentemobile;
+	}
+	.mediosdepago{
+		width: 100%;
+	}
+	.nuestrasredes{
+		width: 100%;
 	}
 	.contenidonosotros {
 		flex-wrap: wrap;
@@ -391,6 +431,9 @@ li {
 		width: 90%;
 	}
 	.botoncarrito {
+		font-size: $fuentemobile !important;
+	}
+	.botonformulario{
 		font-size: $fuentemobile !important;
 	}
 	.menumobile {
