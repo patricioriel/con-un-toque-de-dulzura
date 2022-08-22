@@ -56,7 +56,7 @@ a {
 .redes {
   transition: all 1s ease-in-out; }
   .redes:hover {
-    color: #ce0000 !important; }
+    transform: rotate(360deg); }
 
 .tituloindex {
   text-decoration: underline rgba(255, 255, 255, 0);
@@ -125,21 +125,6 @@ li {
   background-size: 500px;
   color: black; }
 
-.iconofb {
-  transition: all 1s ease-in-out; }
-  .iconofb:hover {
-    color: #880000; }
-
-.iconoig {
-  transition: all 1s ease-in-out; }
-  .iconoig:hover {
-    color: #880000; }
-
-.iconoli {
-  transition: all 1s ease-in-out; }
-  .iconoli:hover {
-    color: #880000; }
-
 .pie {
   padding-top: 12px;
   padding-bottom: 3px;
@@ -152,7 +137,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: 45%;
-  justify-content: space-around; }
+  justify-content: center;
+  column-gap: 30px; }
   .mediosdepago span {
     width: 100%;
     padding-bottom: 20px; }
@@ -165,7 +151,7 @@ li {
   .nuestrasredes span {
     width: 100%;
     padding-bottom: 20px; }
-  .nuestrasredes i {
+  .nuestrasredes a {
     padding-left: 20px; }
 
 .pasoapasogrid {
