@@ -1,5 +1,5 @@
 $fondopagina: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-$fuentecuerpo: 22px;
+$fuentecuerpo: 20px;
 $fuentemobile: 17px;
 
 @mixin botones {
@@ -72,6 +72,10 @@ h1 {
 	font-weight: bold;
 }
 
+.textoindex{
+	font-style: italic;
+}
+
 a {
 	color: black !important;
 	text-decoration: none;
@@ -81,13 +85,6 @@ a {
 .paso_a_paso {
 	font-style: italic;
 	list-style-position: inside;
-}
-
-.redes {
-	transition: all 1s ease-in-out;
-	&:hover {
-		transform:rotate(360deg)
-	}
 }
 
 .tituloindex {
@@ -178,7 +175,9 @@ li {
 	flex-wrap: wrap;
 	justify-content: center;
 	row-gap: 30px;
-	
+	span{
+		width: 100%;
+	}
 }
 
 .mediosdepago{
@@ -187,7 +186,7 @@ li {
 	width: 45%;
 	justify-content: center;
 	column-gap: 30px;
-	span{
+	h3{
 		width: 100%;
 		padding-bottom: 20px;
 	}
@@ -198,7 +197,18 @@ li {
 	flex-wrap: wrap;
 	width: 45%;
 	justify-content: center;
-	span{
+	ol{
+		list-style-position: inside;
+		list-style-type: none;
+		display: flex;
+	}
+	li{
+		transition: all 1s ease-in-out;
+		&:hover {
+		transform:rotate(360deg)
+		}
+	}
+	h3{
 		width: 100%;
 		padding-bottom: 20px;
 	}
@@ -224,6 +234,7 @@ li {
 
 .textonosotros {
 	width: 70%;
+	text-align: left;
 }
 
 .formulario {
@@ -419,9 +430,6 @@ li {
 	}
 	.menumobile {
 		display: flex !important;
-	}
-	.autor {
-		display: block;
 	}
 	.flexcarrito {
 		flex-wrap: wrap;
