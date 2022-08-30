@@ -180,6 +180,24 @@ li {
   width: 70%;
   text-align: left; }
 
+.flexslider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 30px; }
+
+.carrusel {
+  display: flex; }
+
+.contenedorinf {
+  width: 40%; }
+  .contenedorinf h3 {
+    padding-top: 20px; }
+
+.apedido {
+  width: 100%;
+  padding-top: 40px; }
+
 .formulario {
   width: 300px;
   box-sizing: content-box !important;
@@ -305,6 +323,8 @@ li {
     font-size: 17px;
     width: 100%;
     width: 100%; }
+  .contenedorinf {
+    width: 80%; }
   .bodycontacto {
     font-size: 17px; }
   .bodytortas {

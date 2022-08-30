@@ -237,6 +237,29 @@ li {
 	text-align: left;
 }
 
+.flexslider{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+
+.carrusel{
+	display: flex;
+}
+
+.contenedorinf{
+	width: 40%;
+	h3{
+		padding-top: 20px;
+	}
+}
+
+.apedido{
+	width: 100%;
+	padding-top: 40px;
+}
+
 .formulario {
 	width: 300px;
 	box-sizing: content-box !important;
@@ -369,6 +392,9 @@ li {
 		font-size: $fuentemobile;
 		width: 100%;
 		width: 100%;
+	}
+	.contenedorinf{
+		width: 80%;
 	}
 	.bodycontacto {
 		font-size: $fuentemobile;
