@@ -67,15 +67,15 @@ body {
 
 .divlogo {
 	display: flex;
+	width: 100%;
 	a{
 		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
-}
-
-.logo {
-	width: 100%;
+	img{
+		width: 100%;
+	}
 }
 
 .menucentrado {
@@ -211,9 +211,10 @@ li {
 	width: 45%;
 	justify-content: center;
 	column-gap: 30px;
-	h3{
+	p{
 		width: 100%;
 		padding-bottom: 20px;
+		text-decoration: underline;
 	}
 }
 
@@ -233,9 +234,10 @@ li {
 		transform:rotate(360deg)
 		}
 	}
-	h3{
+	p{
 		width: 100%;
 		padding-bottom: 20px;
+		text-decoration: underline;
 	}
 	a{padding-left: 20px;}
 }
@@ -283,6 +285,12 @@ li {
 .apedido{
 	width: 100%;
 	padding-top: 40px;
+}
+
+.consultastortas{
+	p{
+		font-size: 22px;
+	}
 }
 
 .formulario {
