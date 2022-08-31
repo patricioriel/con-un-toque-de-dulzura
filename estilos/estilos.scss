@@ -67,6 +67,11 @@ body {
 
 .divlogo {
 	display: flex;
+	a{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
 }
 
 .logo {
