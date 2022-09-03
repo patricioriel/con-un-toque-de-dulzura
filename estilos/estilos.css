@@ -453,4 +453,6 @@ li {
     width: 90%;
     margin-bottom: 10px; }
   .tituloyform {
-    width: 90%; } }
+    width: 90%; }
+    .tituloyform h2 {
+      padding-top: 20px; } }
