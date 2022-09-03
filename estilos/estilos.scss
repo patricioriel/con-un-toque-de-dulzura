@@ -54,6 +54,14 @@ h1,{
 	  }
 }
 
+h2{
+	font-weight: lighter !important;
+}
+
+h3{
+	font-weight: bold;
+}
+
 body {
 	color: hsl(256, 100%, 13%);
 	background: $fondopagina;
@@ -293,39 +301,89 @@ li {
 	}
 }
 
-.formulario {
-	width: 300px;
-	box-sizing: content-box !important;
-	margin: 0 auto;
-	padding: 20px;
+.form{
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	background-color: rgba(151, 95, 241, 0.788);
 	border: 4px solid rgba(113, 9, 211, 0.87);
 	border-radius: 5px;
+	
+	.contenedorformulario{
+		display: flex;
+		justify-content: center;
+		}
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 10px;
+	}
 }
+
+.tituloyform{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 45%;
+	h2{
+		width: 100%;
+	}
+}
+
+.contenedorpreguntas{
+	width: 45%;
+	margin-left: 10px;
+}
+
+.formypreg{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+
+// .formulario {
+// 	width: 300px;
+// 	box-sizing: content-box !important;
+// 	margin: 0 auto;
+// 	padding: 20px;
+// 	background-color: rgba(151, 95, 241, 0.788);
+// 	border: 4px solid rgba(113, 9, 211, 0.87);
+// 	border-radius: 5px;
+// }
 
 .nombre {
 	@include propiedadesformulario;
-	width: 280px;
+	width: 100%;
 }
 
 .mail {
 	@include propiedadesformulario;
-	width: 280px;
+	width: 100%;
 }
 
 .consulta {
 	@include propiedadesformulario;
-	width: 280px;
+	width: 100%;
 	height: 280px;
 }
 
 .divnombre {
 	padding-bottom: 10px;
+	width: 90%;
 }
 
 .divmail {
 	padding-bottom: 10px;
+	width: 90%;
 }
+
+.divconsulta{
+	padding-bottom: 10px;
+	width: 90%;
+}
+
+
 
 .botonformulario {
 	@include botones;
@@ -441,6 +499,12 @@ li {
 	h1 {
 		font-size: 24px;
 	}
+	h2{
+		font-size: 22px;
+	}
+	h3{
+		font-size: 20px;
+	}
 	.chocotorta {
 		width: 100%;
 	}
@@ -513,5 +577,16 @@ li {
 	}
 	.catalogo {
 		font-size: $fuentemobile;
+	}
+	.formypreg{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.contenedorpreguntas{
+		width: 90%;
+		margin-bottom: 10px;
+	}
+	.tituloyform{
+		width: 90%;
 	}
 }

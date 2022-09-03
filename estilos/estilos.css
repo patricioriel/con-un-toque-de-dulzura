@@ -27,6 +27,12 @@ h1 {
   h1:hover::before {
     transform: scaleX(1); }
 
+h2 {
+  font-weight: lighter !important; }
+
+h3 {
+  font-weight: bold; }
+
 body {
   color: #120042;
   background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
@@ -222,39 +228,69 @@ li {
 .consultastortas p {
   font-size: 22px; }
 
-.formulario {
-  width: 300px;
-  box-sizing: content-box !important;
-  margin: 0 auto;
-  padding: 20px;
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(151, 95, 241, 0.788);
   border: 4px solid rgba(113, 9, 211, 0.87);
   border-radius: 5px; }
+  .form .contenedorformulario {
+    display: flex;
+    justify-content: center; }
+  .form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px; }
+
+.tituloyform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 45%; }
+  .tituloyform h2 {
+    width: 100%; }
+
+.contenedorpreguntas {
+  width: 45%;
+  margin-left: 10px; }
+
+.formypreg {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px; }
 
 .nombre {
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.719);
   padding: 5px;
-  width: 280px; }
+  width: 100%; }
 
 .mail {
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.719);
   padding: 5px;
-  width: 280px; }
+  width: 100%; }
 
 .consulta {
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.719);
   padding: 5px;
-  width: 280px;
+  width: 100%;
   height: 280px; }
 
 .divnombre {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 90%; }
 
 .divmail {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 90%; }
+
+.divconsulta {
+  padding-bottom: 10px;
+  width: 90%; }
 
 .botonformulario {
   margin-bottom: 10px;
@@ -357,6 +393,10 @@ li {
     font-size: 17px; }
   h1 {
     font-size: 24px; }
+  h2 {
+    font-size: 22px; }
+  h3 {
+    font-size: 20px; }
   .chocotorta {
     width: 100%; }
   .tortafrutilla {
@@ -405,4 +445,12 @@ li {
   .subtienda {
     font-size: 24px; }
   .catalogo {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .formypreg {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .contenedorpreguntas {
+    width: 90%;
+    margin-bottom: 10px; }
+  .tituloyform {
+    width: 90%; } }
